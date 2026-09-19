@@ -156,16 +156,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 }
 .nav-left{display:flex;align-items:center;gap:12px}
 .logo-mark{
-  width:32px;height:32px;border-radius:9px;
-  background:linear-gradient(135deg,#7c6bff 0%,#22d3ee 100%);
-  display:grid;place-items:center;
-  color:#fff;font-weight:900;font-size:15px;
-  letter-spacing:-.04em;
+  width:42px;height:42px;border-radius:12px;
+  background:#09090d url('./249597.jpg') center/cover no-repeat;
+  display:block;
   box-shadow:
-    0 8px 24px rgba(124,107,255,.4),
+    0 8px 24px rgba(248,35,35,.35),
     inset 0 1px 0 rgba(255,255,255,.35);
   position:relative;flex-shrink:0;
   animation:logoFloat 4s ease-in-out infinite;
+  overflow:hidden;
 }
 @keyframes logoFloat{
   0%,100%{transform:translateY(0) rotate(0deg)}
@@ -173,7 +172,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 }
 .logo-mark::before{
   content:'';position:absolute;inset:-4px;border-radius:13px;
-  background:linear-gradient(135deg,#7c6bff,#22d3ee);
+  background:linear-gradient(135deg,#ef2222,#ff8a65);
   filter:blur(10px);opacity:.5;z-index:-1;
   animation:logoPulse 3.5s ease-in-out infinite;
 }
@@ -1120,8 +1119,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 <!-- NAV -->
 <div class="nav">
   <div class="nav-left">
-    <div class="logo-mark">F</div>
-    <div class="brand">SNOOPY<em>MODS</em></div>
+    <div class="logo-mark" role="img" aria-label="Logo SNOOPY OBB"></div>
+    <div class="brand">SNOOPY<em>OBB</em></div>
   </div>
   <div class="nav-right">
     <div class="status-pill" id="statusPill">
