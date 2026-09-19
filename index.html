@@ -1106,6 +1106,51 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
     transition-duration:.01ms !important;
   }
 }
+
+/* ============================================================
+   SNOOPY OBB BRAND THEME — black, red and white
+   ============================================================ */
+:root{
+  --bg:#070707;
+  --text:#fffafa;
+  --text-2:#d5caca;
+  --text-3:#a89090;
+  --text-4:#715f5f;
+  --iris:#e50914;
+  --iris-2:#ff3341;
+  --cyan:#ff5c63;
+  --pink:#ff8585;
+}
+body{background:#070707}
+.mesh::before{
+  background:
+    radial-gradient(circle at 20% 30%,rgba(229,9,20,.42),transparent 35%),
+    radial-gradient(circle at 75% 20%,rgba(127,0,0,.35),transparent 35%),
+    radial-gradient(circle at 30% 80%,rgba(255,51,65,.25),transparent 40%),
+    radial-gradient(circle at 85% 75%,rgba(120,0,0,.28),transparent 40%);
+}
+.mesh::after{
+  background:
+    radial-gradient(circle at 60% 40%,rgba(255,255,255,.07),transparent 35%),
+    radial-gradient(circle at 10% 90%,rgba(229,9,20,.15),transparent 40%);
+}
+.aurora-wave::before,.aurora-wave::after{
+  background:linear-gradient(90deg,transparent 0%,rgba(229,9,20,.16) 25%,rgba(255,255,255,.08) 50%,rgba(229,9,20,.16) 75%,transparent 100%);
+}
+.logo-mark{border:1px solid rgba(255,51,65,.65)}
+.brand em{background:linear-gradient(120deg,#ff3341 0%,#fff 50%,#e50914 100%);background-size:200% 100%;}
+.title em{background:linear-gradient(120deg,#ff3341 0%,#fff 45%,#e50914 100%);background-size:200% 100%;}
+.card-glow{background:radial-gradient(circle,rgba(229,9,20,.2),transparent 60%)}
+.card::before{background:linear-gradient(140deg,rgba(255,255,255,.16),transparent 30%,transparent 70%,rgba(229,9,20,.2))}
+.cta{background:linear-gradient(135deg,#b70712 0%,#e50914 48%,#ff3341 100%);box-shadow:0 20px 50px rgba(229,9,20,.38),0 0 0 1px rgba(255,255,255,.16) inset,0 1px 0 rgba(255,255,255,.35) inset,0 -2px 6px rgba(0,0,0,.25) inset}
+.cta:hover{box-shadow:0 32px 80px rgba(229,9,20,.55),0 0 0 1px rgba(255,255,255,.2) inset,0 1px 0 rgba(255,255,255,.45) inset,0 -2px 6px rgba(0,0,0,.25) inset}
+.feature:hover{border-color:rgba(229,9,20,.5);box-shadow:0 12px 30px rgba(229,9,20,.18)}
+.key-display{background:linear-gradient(160deg,rgba(229,9,20,.11),rgba(229,9,20,.025));border-color:rgba(229,9,20,.34)}
+.key-text{color:#fff;text-shadow:0 0 24px rgba(229,9,20,.38)}
+.key-display::after{background:radial-gradient(circle,rgba(229,9,20,.24),transparent 60%)}
+.key-display::before{background:linear-gradient(90deg,transparent,#e50914,transparent)}
+.act:hover{border-color:rgba(229,9,20,.55);color:#fff;box-shadow:0 10px 24px rgba(229,9,20,.2)}
+.toast.info .toast-icon{background:rgba(229,9,20,.14);color:var(--iris-2)}
 </style>
 </head>
 <body>
