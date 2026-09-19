@@ -1151,6 +1151,21 @@ body{background:#070707}
 .key-display::before{background:linear-gradient(90deg,transparent,#e50914,transparent)}
 .act:hover{border-color:rgba(229,9,20,.55);color:#fff;box-shadow:0 10px 24px rgba(229,9,20,.2)}
 .toast.info .toast-icon{background:rgba(229,9,20,.14);color:var(--iris-2)}
+
+/* Softer contrast for mobile and fallback-safe solid text rendering */
+.mesh::before{opacity:.42}
+.mesh::after{opacity:.28}
+.aurora-wave{opacity:.22}
+.brand em,.title em{
+  background:none;
+  color:#ff626b;
+  -webkit-text-fill-color:#ff626b;
+  -webkit-background-clip:initial;
+  background-clip:initial;
+}
+.card{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.1)}
+.key-display{background:rgba(255,255,255,.035);border-color:rgba(229,9,20,.28)}
+.cta{background:linear-gradient(135deg,#9f1019 0%,#c91825 52%,#e0444d 100%)}
 </style>
 </head>
 <body>
